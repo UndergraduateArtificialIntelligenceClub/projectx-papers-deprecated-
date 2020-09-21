@@ -12,3 +12,5 @@
 .*.lb
 *.pdf
 *.synctex.gz
+*.bbl
+*.blg
