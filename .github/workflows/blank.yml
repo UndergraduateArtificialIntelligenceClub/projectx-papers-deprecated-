@@ -1,0 +1,24 @@
+name: CI
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Compile LaTeX documents
+        uses: xu-cheng/latex-action@v2
+        with:
+          root_file: |
+            deliverable1.tex
+            
+      - name: Save outputs as artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: PDFs
+          path: ./*.pdf
