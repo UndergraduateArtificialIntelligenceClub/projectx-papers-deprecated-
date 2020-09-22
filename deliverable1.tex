@@ -4,9 +4,13 @@
 \usepackage[utf8]{inputenc}
 \usepackage{geometry}
 \usepackage{authblk}
+\usepackage{biblatex}
 
 % PAGE DIMENSIONS
 \geometry{a4paper}
+
+% BIBLIOGRAPHY FILE
+\addbibresource{bibliography.bib}
 
 % TITLE
 \title{ProjectX Research Proposal}
@@ -40,11 +44,11 @@ The bulk of our research contribution will consist of analyzing the output of ou
 \subsection{Related Research}
 Similar research does exist in the field. Although the methodology of these papers are similar, they have some significant differences from our methods. Many papers utilize convolutional neural networks to analyze landscape data and draw conclusions about mosquito populations. These papers are usually localized to one geographical area, cover a relatively small timeline, or both. We intend to improve in both of these areas in order to build a better profile of how mosquito populations in urban areas may be affected by climate change.
 
-For instance, \cite{deeplandscape} covers data from the years 2012-2016 in Pakistan. Furthermore, \cite{ModelingDV} utilizes machine learning technique to predict the oviposition of certain mosquitoes in North Argentina.  The paper \cite{doublepunch} discusses the risk that dengue fever and COVID-19 play together in Asian countries, specifically since treatments used to treat dengue fever might have adverse affects on COVID treatment. 
+For instance, \parencite{deeplandscape} covers data from the years 2012-2016 in Pakistan. Furthermore, \parencite{ModelingDV} utilizes machine learning technique to predict the oviposition of certain mosquitoes in North Argentina.  The paper \parencite{doublepunch} discusses the risk that dengue fever and COVID-19 play together in Asian countries, specifically since treatments used to treat dengue fever might have adverse affects on COVID treatment. 
 
-For some other techniques, the paper \cite{dengue} attempts to use passenger flow to see how easily diseases such as dengue can spread based on airport data. Furthermore, \cite{twitter} is a slightly older paper that used Twitter data to predict when certain epidemics relating to Dengue and Zika will occur in Brazil. 
+For some other techniques, the paper \parencite{dengue} attempts to use passenger flow to see how easily diseases such as dengue can spread based on airport data. Furthermore, \parencite{twitter} is a slightly older paper that used Twitter data to predict when certain epidemics relating to Dengue and Zika will occur in Brazil. 
 
-For some possible treatments and for how to better contain outbreaks related to vector-borne diseases, \cite{agent} uses satellite imagery to detect several abiotic factors that are important to the mosquito life cycle, and then uses agent-based modeling to predict what control strategies might be useful. 
+For some possible treatments and for how to better contain outbreaks related to vector-borne diseases, \parencite{agent} uses satellite imagery to detect several abiotic factors that are important to the mosquito life cycle, and then uses agent-based modeling to predict what control strategies might be useful. 
 
 \subsection{Machine Learning}
 There have been a number of studies using machine learning to identify trends in mosquito populations. Our approach will use a combination of convolutional neural networks to measure the level of industrialization present in a given satellite image, along with historical data from mosquito traps around the world. We will use this data to build a predictive model where we can identify the characteristics that lead to increased mosquito populations in urban environments, and extrapolate this data to the outcomes which may arise in areas hit hard by climate change.
@@ -97,9 +101,6 @@ We think there is potential to combine data about these built environments from 
 
 \subsection{What other questions did we consider?}
 We brainstormed a few other ideas before choosing this one. One of the other ideas we were considering was detecting fake news on Twitter related to COVID-19, but we couldn't justify how this was related to climate change. A second idea we considered was seeing how travel data has impacted the spread of viruses, and in particular comparing the 1918 Spanish flu to the present COVID-19 outbreak. 
-
-\bibliographystyle{ieee}
-\bibliography{bibliography}
 
 \end{document}
 \begin{thebibliography}{9}
